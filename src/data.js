@@ -1,42 +1,33 @@
 
-const catImages = [
+const galleryImages = [
   {
-    src: require('./images/cat-pics/IMG-4783.JPG'),
+    src: require('./images/what-confused.gif'),
     alt: '',
   },
   {
-    src: require('./images/cat-pics/IMG-4787.jpg'),
+    src: require('./images/catgif.gif'),
     alt: '',
   },
 
 ];
 
-const artImages = [
-  {
-    src: require('./images/art-pics/21day.jpg'),
-    alt: '',
-  },
-  {
-    src: require('./images/art-pics/chemigram1.jpeg'),
-    alt: '',
-  },
-]
+
 
 export const projects = [
     {
-      title: "Noodles",
-      subtitle: "A Shrine to My Cat",
-      description: "He's on Prozac, likes to eat butter and actively tries to trip you",
-      image: require("./images/cat-pics/cat-snarl.jpeg"),
-      gallery: catImages
+      title: "Cat Coder",
+      subtitle: "Whack Whack Whack",
+      description: "I code things",
+      image: require("./images/catgif.gif"),
+      gallery: galleryImages
     },
     {
-      title: "Art",
-      subtitle: "My Weird Photography",
+      title: "What?",
+      subtitle: "I'm confused",
       description:
-        "Chemigrams, Cyanotypes and Photograms. I enjoy making photographs without a camera",
-      image: require("./images/art-pics/chemigram1.jpeg"),
-      gallery: artImages
+        "Is this a cat? Who knows.",
+      image: require("./images/what-confused.gif"),
+      gallery: galleryImages
     },
   ];
 
@@ -45,6 +36,5 @@ export const projects = [
     "Honesty and Transparency",
     "Critical Thinking",
     "Growth Mindset",
-    "Kindness and Empathy",
   ];
 
