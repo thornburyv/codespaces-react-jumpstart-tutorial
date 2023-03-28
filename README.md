@@ -1,78 +1,65 @@
-# GitHub Codespaces ♥️ React
+# GitHub Codespaces + React + TailwindCSS
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+This basic React App uses GitHub codespaces for easy development. It allows you to run your code editor in the browser and automatically sets up the development environment and launches the app.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+---
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## To use this Template:
 
-This project was bootstrapped for you with [Create React App](https://github.com/facebook/create-react-app).
+1. Click “Use this template” and then select “create a new repository”
+Name your repository whatever you like. Make it public for now so we can share with each other.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+![](./tutorial-images/create-repo.gif)
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+### 2. Once your Repository has been created, click “Code” and select “Create codespace on Main”
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+![](./tutorial-images/start-codespace.gif)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. This will launch the codespace in your browser. It could take a minute or two, so don’t touch anything until it has loaded and you can see the website in the right hand tab. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./tutorial-images/open-codespace.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Once you are done developing, make sure you stop the active codespace instance in your repository. Click “Code” find the active codespace, click the three dots and select “stop codespace”. You can also relaunch your code space by selecting “open in browser” 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](./tutorial-images/stop-codespace.gif)
 
-### `npm run eject`
+## File Structure: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The src (source) folder contains the “source code” of you application. You will mainly be working on files within this folder. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Under src, you will see a components folder and an images folder. The images folder is where you will put any images you wish to use for your website. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The components folder contains the various files of code that make up the frontend. 
+The Layout component determines how the components are arranged in page. 
+About
+Skills
+Projects
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Image gallery is dynamically generated based on which project you click on. This is a key element of React, reusable components that display different content the same way. 
 
-## Learn More
+Data is brought into the components by importing objects from the data.js file in the src folder. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Change the data in the data file and it will show up on the front end. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![](./tutorial-images/src-folder.png)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## TailwindCSS
 
-### Analyzing the Bundle Size
+The styling of the application – colors, font, layout, responsiveness, are all set using tailwindcss in the “ClassName” attribute on individual html tags. [Checkout the documentation here](https://tailwindcss.com/docs/installation)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![](./tutorial-images/tailwind-example.png)
 
-### Making a Progressive Web App
+Play around! Have fun, make it your own. A few tips:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Make small changes and make sure it’s doing what you want before moving on, especially with the tailwindcss. You want to be able to quickly undo something that breaks the site or doesn’t work the way you want. Utilize the undo option and look at your live site frequently.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Try not to mess with files outside of the src folder too much. They are generated automatically and handle many of the behind-the-scenes aspects of displaying a website. 

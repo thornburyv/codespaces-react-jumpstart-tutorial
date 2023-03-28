@@ -36,5 +36,6 @@ export const projects = [
     "Honesty and Transparency",
     "Critical Thinking",
     "Growth Mindset",
+    "Kindness and Emplathy"
   ];
 
