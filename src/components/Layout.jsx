@@ -6,6 +6,7 @@ import Skills from "./Skills";
 export default function Layout() {
     return(
         <>
+       
         <About/>
         <Skills/>
         <Projects/>

@@ -8,14 +8,17 @@ const galleryImages = [
     src: require('./images/catgif.gif'),
     alt: '',
   },
-
+  {
+    src: require('./images/towers.jpeg'),
+    alt: '',
+  },
 ];
 
 
 
 export const projects = [
     {
-      title: "Cat Coder",
+      title: "Cat attack",
       subtitle: "Whack Whack Whack",
       description: "I code things",
       image: require("./images/catgif.gif"),
@@ -32,7 +35,7 @@ export const projects = [
   ];
 
   export const values = [
-    "Creativity",
+    "Pizza",
     "Honesty and Transparency",
     "Critical Thinking",
     "Growth Mindset",
